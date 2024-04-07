@@ -1,10 +1,4 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-//import corpcommentImg from "@/public/corpcomment.png";
-//import rmtdevImg from "@/public/rmtdev.png";
-//import wordanalyticsImg from "@/public/wordanalytics.png";
+
 
 export const links = [
   {
@@ -12,16 +6,12 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "Sobre",
-    hash: "#about",
+    name: "Habilidades",
+    hash: "#skills",
   },
   {
     name: "Projetos",
     hash: "#projects",
-  },
-  {
-    name: "Habilidades",
-    hash: "#skills",
   },
   {
     name: "Experiência",
@@ -33,76 +23,160 @@ export const links = [
   },
 ] as const;
 
-/*
-export const experiencesData = [
+
+export const ProjectData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    imgUrl: "/image/projects/bomDoza.png",
+    title: "Bom Doza",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "A Bom Doza site para empres com gama de serviços de limpeza. Desde a limpeza detalhada de carros até a revitalização de sofás, tapetes e tanques. ",
+    gitUrl: "",
+    previewUrl: "https://www.bomdoza.cv/pt",
+    tag: ["Todos", "Web", "Nextjs", "Projetos Empresa"],
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    imgUrl: "/image/projects/emigranteCV.png",
+    title: "Emigrante CV",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "[Nextjs, Bootstrap] É uma plataforma abrangente e integrada que reúne todos os serviços essenciais que facilitam a vida diária dos emigrantes tornando-a mais fácil e prática.",
+    gitUrl: "",
+    previewUrl: "https://www.emigrante.cv/",
+    tag: ["Todos", "Web", "Nextjs", "Projetos Empresa"],
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    imgUrl: "/image/projects/THEBESTOFCV.png",
+    title: "The Best Of CV",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "[Nextjs, Bootstrap] The Best Of CV é um projeto inovador que nasceu com o propósito de identificar, analisar, avaliar e internacionalizar talentos em Cabo Verde através da nossa plataforma.",
+    gitUrl: "",
+    previewUrl: "https://www.thebestof.cv/",
+    tag: ["Todos", "Web", "Nextjs", "Projetos Empresa"],
+  },
+  {
+    imgUrl: "/image/projects/bomDoza.png",
+    title: "Event Manager Api",
+    description:
+      "É um API  [Node.js, TypeScript, Fastify, Prisma, SQLite] permite que os organizadores criem eventos, gerenciem inscrições de participantes e facilitem check-ins de eventos",
+    gitUrl: "https://github.com/JailsonMendonca/Api_Nodejs_Events",
+    previewUrl: "",
+    tag: ["Todos", "Web", "Nodejs"],
+  },
+  {
+    imgUrl: "/image/projects/bomDoza.png",
+    title: "Event React BackOffice",
+    description:
+      "Desenvolvimento de uma interface [React.js, Vite.js, Tailwind css] que exibe participantes de eventos em tabelas, incluindo paginação, filtro por nome e URLs dinâmicas para compartilhamento e salvamento de estados de pesquisa",
+    gitUrl: "https://github.com/JailsonMendonca/Event_react_backOffice",
+    previewUrl: "",
+    tag: ["Todos", "Web", "Reactjs"],
   },
 ] as const;
 
-export const projectsData = [
+
+export const Backend_skill = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    skill_name: "Node js",
+    Image: "/image/icon/node-js.png",
+    width: 80,
+    height: 80,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    skill_name: "Adonis js",
+    Image: "/image/icon/adonis.png",
+    width: 60,
+    height: 60,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    skill_name: "Fastify",
+    Image: "/image/icon/fastify.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Postger SQL",
+    Image: "/image/icon/postger.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "My SQL",
+    Image: "/image/icon/mysql.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Prisma",
+    Image: "/image/icon/prisma.webp",
+    width: 70,
+    height: 70,
   },
 ] as const;
-*/
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
-] as const;
+  
+
+  
+  export const Frontend_skill = [
+    {
+      skill_name: "Html 5",
+      Image: "/image/icon/html.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Css",
+      Image: "/image/icon/css.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Java Script",
+      Image: "/image/icon/js.png",
+      width: 65,
+      height: 65,
+    },
+    {
+      skill_name: "Tailwind CSS",
+      Image: "/image/icon/tailwind.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Bootstrap CSS",
+      Image: "/image/icon/boostrap.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "React",
+      Image: "/image/icon/react.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Type Script",
+      Image: "/image/icon/ts.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Next js 13",
+      Image: "/image/icon/next.png",
+      width: 80,
+      height: 80,
+    }
+  ] as const;
+
+
+  export const Outhers_skill = [
+    {
+      skill_name: "GitHub",
+      Image: "/image/icon/gitHub.png",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Asana",
+      Image: "/image/icon/asana.png",
+      width: 80,
+      height: 80,
+    }
+  ] as const;

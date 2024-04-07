@@ -1,17 +1,17 @@
-import Hero from "../components/hero";
-import IconStack from "../components/iconStack";
-import CardGalery from "../components/cardGalery";
-import CardProject from "../components/cardProject";
-import Filter from "../components/filter";
-import FormEmail from "../components/formEmail";
+import Hero from "@/components/hero";
+import FormEmail from "@/components/formEmail";
+import SectionDivider from "@/components/section-divider";
+import SectionProjects from "@/components/section-projects";
+import SectionSlills from "@/components/section-slills";
 
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <IconStack />
-      <FormEmail />
+      <SectionDivider />
+      <SectionSlills />
+      <SectionProjects />
     </main>
   );
 }
