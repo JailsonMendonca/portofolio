@@ -1,9 +1,6 @@
-import React from 'react'
 
-const formEmail = () => {
+export default function formEmail ()  {
   return (
     <div>formEmail</div>
   )
 }
-
-export default formEmail

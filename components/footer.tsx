@@ -5,13 +5,13 @@ import { BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { motion } from "framer-motion"
 
-const Footer = () => {
+export default function Footer () {
 
 
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <motion.footer className="bg-white rounded-lg mt-20"
+      <motion.footer className="border-opacity-40 bg-white mb-5 rounded-lg mt-20"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
@@ -52,6 +52,4 @@ const Footer = () => {
       </motion.footer>
     </>
   )
-}
-
-export default Footer
+};

@@ -1,10 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+//import Image from 'next/image';
 
-const cardGalery = () => {
+export default function cardGalery  () {
   return (
     <div>cardGalery</div>
   )
 }
-
-export default cardGalery

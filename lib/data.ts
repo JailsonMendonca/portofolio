@@ -2,24 +2,16 @@
 
 export const links = [
   {
-    name: "Inicio",
-    hash: "#home",
+    name: "Início",
+    hash: "#Início",
   },
   {
     name: "Habilidades",
-    hash: "#skills",
+    hash: "#Habilidades",
   },
   {
     name: "Projetos",
-    hash: "#projects",
-  },
-  {
-    name: "Experiência",
-    hash: "#experience",
-  },
-  {
-    name: "Contato",
-    hash: "#contact",
+    hash: "#Projetos",
   },
 ] as const;
 
@@ -29,7 +21,7 @@ export const ProjectData = [
     imgUrl: "/image/projects/bomDoza.png",
     title: "Bom Doza",
     description:
-      "A Bom Doza site para empres com gama de serviços de limpeza. Desde a limpeza detalhada de carros até a revitalização de sofás, tapetes e tanques. ",
+      "A Bom Doza site [Nextjs, Tailwind CSS] para uma empresa com gama de serviços de limpeza. Desde a limpeza detalhada de carros até a revitalização de sofás, tapetes e tanques. ",
     gitUrl: "",
     previewUrl: "https://www.bomdoza.cv/pt",
     tag: ["Todos", "Web", "Nextjs", "Projetos Empresa"],
@@ -53,7 +45,7 @@ export const ProjectData = [
     tag: ["Todos", "Web", "Nextjs", "Projetos Empresa"],
   },
   {
-    imgUrl: "/image/projects/bomDoza.png",
+    imgUrl: "/image/projects/api_node.png",
     title: "Event Manager Api",
     description:
       "É um API  [Node.js, TypeScript, Fastify, Prisma, SQLite] permite que os organizadores criem eventos, gerenciem inscrições de participantes e facilitem check-ins de eventos",
@@ -62,7 +54,7 @@ export const ProjectData = [
     tag: ["Todos", "Web", "Nodejs"],
   },
   {
-    imgUrl: "/image/projects/bomDoza.png",
+    imgUrl: "/image/projects/backoff_react.png",
     title: "Event React BackOffice",
     description:
       "Desenvolvimento de uma interface [React.js, Vite.js, Tailwind css] que exibe participantes de eventos em tabelas, incluindo paginação, filtro por nome e URLs dinâmicas para compartilhamento e salvamento de estados de pesquisa",

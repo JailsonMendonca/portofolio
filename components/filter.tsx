@@ -7,10 +7,10 @@ interface PropsFilter {
 }
 
 
-const Filter = ({ name, onClick, isSelected }: PropsFilter) => {
+export default function Filter ({ name, onClick, isSelected }: PropsFilter) {
   const buttonStyles = isSelected
     ? "text-black border-primary-500"
-    : "text-[#ADB7BE] border-slate-600 hover:border-black/10";
+    : "text-gray-700  border-slate-600 hover:border-black/10";
   return (
     <motion.button
       className={`${buttonStyles} rounded-full border-2 px-6 py-1 text-md cursor-pointer`}
@@ -23,4 +23,3 @@ const Filter = ({ name, onClick, isSelected }: PropsFilter) => {
   );
 };
 
-export default Filter;

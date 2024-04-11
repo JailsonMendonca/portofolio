@@ -6,12 +6,18 @@ import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from '@/context/active-section-context-provider'
 
-const hero = () => {
+export default function hero() {
+  
+  const { ref } = useSectionInView("Início", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
-      id="home"
+      id="Início"
       className="text-center  scroll-mt-[100rem]"
+      ref={ref}
     >
       <div className="flex  items-center justify-center">
         <motion.div className="relative"
@@ -94,11 +100,12 @@ const hero = () => {
         </a>
         <div className="flex flex-wrap justify-center sm:justify-start gap-4">
         <a className="bg-white  p-4 flex text-gray-700
-         items-center gap-2 rounded-full
-         focus:scale-110 hover:scale-[1.15] hover:text-gray-950
-         active:scale-[1.15] transition cursor-pointer
-         border border-black/10 "
-         href="https://www.linkedin.com/in/jailson-mendon%C3%A7a-a4099025a/" target="_blank"
+          items-center gap-2 rounded-full
+          focus:scale-110 hover:scale-[1.15] hover:text-gray-950
+          active:scale-[1.15] transition cursor-pointer
+          border border-black/10 "
+          href="https://www.linkedin.com/in/jailson-mendon%C3%A7a-a4099025a/"
+          target="_blank"
         >
           <BsLinkedin/>
         </a>
@@ -116,6 +123,4 @@ const hero = () => {
       </motion.div>
     </section>
   )
-}
-
-export default hero;
+};

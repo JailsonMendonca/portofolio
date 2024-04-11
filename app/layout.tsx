@@ -3,11 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import ActiveSectionContextProvider from "@/context/active-section-context-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portofolio",
+  title: "Jailson Mendonça",
   description: "Portofolio de Jailson Mendonça",
 };
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className}
        bg-gray-50 text-gray-950 relative
         pt-28 sm:pt-36 max-w-4xl mx-auto`}
@@ -37,10 +38,13 @@ export default function RootLayout({
         >
 
         </div>
-        <Header/>
-        {children}
-        <Footer/>
+        <ActiveSectionContextProvider>  
+          <Header />
+          {children}
+          <Footer />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
 }
+
