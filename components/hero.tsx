@@ -9,7 +9,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from '@/context/active-section-context-provider'
 
-export default function hero() {
+export default function Hero() {
   
   const { ref } = useSectionInView("Início", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();

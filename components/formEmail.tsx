@@ -1,5 +1,5 @@
 
-export default function formEmail ()  {
+export default function FormEmail ()  {
   return (
     <div>formEmail</div>
   )

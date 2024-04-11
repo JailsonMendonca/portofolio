@@ -6,9 +6,9 @@ import Link from "next/link"
 import clsx from "clsx"
 import { useActiveSectionContext } from '@/context/active-section-context-provider'
 
-export default function header() {
+export default function Header() {
 
- const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
