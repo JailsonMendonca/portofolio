@@ -5,7 +5,7 @@ import SkillText from "./skillText"
 
 export default function SectionProjects() {
 
-  const { ref } = useSectionInView("Projetos", 0.5);
+  const { ref } = useSectionInView("Projetos", 0.3);
 
   return (
     <section
