@@ -15,11 +15,9 @@ bun dev
 ```
 
 ###
- ## Funcionalidades Principais
+ ## Framer motion
 ###
-
-- [x] Nextjs
-- [x] Framer motion
+- [x] [Framer motion](https://www.framer.com/motion/introduction/) 
 
 ## Deploy on Vercel
 
