@@ -14,11 +14,12 @@ pnpm dev
 bun dev
 ```
 
-##
-<h2>Stack</h2>
+###
+ ## Funcionalidades Principais
+###
 
-[x] Nextjs
-[x] Framer motion
+- [x] Nextjs
+- [x] Framer motion
 
 ## Deploy on Vercel
 
